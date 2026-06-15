@@ -1,4 +1,5 @@
 let button = document.querySelector("button");
+let predict = document.querySelector(".prediction");
 let moved=false
 
 button.addEventListener("mouseover", function() {
@@ -11,3 +12,7 @@ button.addEventListener("mouseover", function() {
     }
 
 })
+setTimeout(function() {
+    button.style.display = "none"
+    predict.innerText = "I predict you will be poiuytrea"
+}, 6000)
